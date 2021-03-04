@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"><script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <link 
+  href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" 
+  rel="stylesheet"  type='text/css'>
+    <script>
+        var step = 0;
+
+        window.onload = function(){
+        const hamburger = document.querySelector('.hamburger');
+        const burger = document.querySelector('.burger-navi');
+        const bgcolor = document.querySelector('.Fluid-bgc')
+           
+        
+        const handleClick = () => {
+            hamburger.classList.toggle('hamburger--active');
+            burger.classList.toggle( 'burger-navi--active');
+        };
+
+        hamburger.addEventListener('click', handleClick);
+        burger.addEventListener('click', handleClick);
+        
+        function changeColor() {
+         if (step < 154) {
+             step++;
+             console.log("hsl(" + String(step) + "," + "50%" + "," + "50%" + ")");
+            bgcolor.style.backgroundColor = "hsl(" + String(step) + "," + "50%" + "," + "50%" + ")";
+        }
+        else {
+            step = 0;
+        }}
+        
+        setInterval(function(){
+            changeColor();
+        }, 50);
+        
+    }
+    </script>
+    <title>Portfolio</title>
+</head>
+<body>
+    
+    <!-- <section class="menu">
+        <nav>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">O mnie</a></li>
+                <li><a href="">Doświadczenie</a></li>
+                <li><a href="">Umiejętności</a></li>
+                <li><a href="">Pobierz CV!</a></li>
+            </ul>
+        </nav>
+    </section> -->
+
+    <button class="hamburger">
+        <span class="burger-box">
+            <span class="salad"></span>
+        </span>
+    </button>
+
+    <div class="burger-navi">
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">O mnie</a></li>
+            <li><a href="">Doświadczenie</a></li>
+            <li><a href="">Umiejętności</a></li>
+            <li><a href="">Pobierz CV!</a></li>
+        </ul>
+    </div>
+
+
+    <section class="Home-view">
+        
+        <div class="welcome">
+            <div class="word">
+            
+            <div class="word1">
+                
+            <div class="sloge0"><p>P</p></div>
+            <div class="sloge1"><p>R</p></div>
+            <div class="sloge2"><p>Z</p></div>
+            <div class="sloge3"><p>Y</p></div>
+            <div class="sloge4"><p>S</p></div>
+            <div class="sloge5"><p>Z</p></div>
+            <div class="sloge6"><p>Ł</p></div>
+            <div class="sloge7"><p>O</p></div>
+            <div class="sloge8"><p>Ś</p></div>
+            <div class="sloge9"><p>Ć</p></div>
+        </div>
+            <div class="space"><p> </p></div>
+
+            <div class="word2">
+            <div class="sloge11"><p>J</p></div>
+            <div class="sloge12"><p>E</p></div>
+            <div class="sloge13"><p>S</p></div>
+            <div class="sloge14"><p>T</p></div>
+        </div>
+            <div class="space"><p> </p></div>
+            <div class="word3">
+            <div class="sloge16"><p>D</p></div>
+            <div class="sloge17"><p>Z</p></div>
+            <div class="sloge18"><p>I</p></div>
+            <div class="sloge19"><p>Ś</p></div>
+        </div>
+    </div>
+    
+        </div>   
+        
+        
+
+
+    </section>
+    
+
+
+
+    <section class="About-me">
+        <div class="quote-about-me"><p>lic. inż Marcin Krzywdziński</p>
+            <div class="download-cv">
+                <a href="cv.pdf" download>
+                    <div class="btn">
+                        <button><p>CV</p></button>
+                  </a>
+            </div>
+        </br> <p>Jestem absolwentem <span>astronomii</span> oraz <span>automatyki i robotyki</span> na UMK</p>
+    </br> <p>Jestem Junior Deweloperem</p>
+    </div>    
+    </div>
+    </section>      
+
+    <section class="Experience">
+        <h1 class="title">Specjalista ds.
+            inżynieryjno-technicznych</h1>
+        <div class="fizyka">
+            <h1>11/2019 </br> 03/2021</h1>
+        
+            <p>Projektowanie układu prózniowego kriogenicznego, tworzenie oprogramowania do urządzeń
+                specjalistycznych, projektowanie przestrzeni użytkowej laboratorium, wykonywanie eksperymentów
+                prózniowych i kriogenicznych, kontakt z zagranicznymi firmami</p>
+           
+        </div>
+        <h1 class="title">Operator Radioteleskopu RT32</h1>
+        <div class="piwnice">
+            <h1>09/2016 </br> 12/2018</h1>
+            
+            <p>Obsługa oprogramowania sterującego radioteleskopem, uczestnictwo w miedzynarodowych synchronicznych
+                obserwacjach, utrzymanie ciągłości pracy radioteleskopu</p>
+            
+        </div>
+        <h1 class="title">Podwykonawca</h1>
+        <div class="CRDS">
+            <h1>09/2019 </br> 02/2021</h1>
+           
+            
+            <p>Projekt i budowa układu opto-elektronicznego do przestrajania lasera próbkującego w spektrometrze
+                CRDS</p>
+            
+        </div>
+        <h1 class="title">Projektant witryny internetowej</h1>
+        <div class="amperwood">
+            <h1>09/2020 </br> 12/2020</h1>
+           
+           
+            <p>Wykonanie witryny internetowej służącej jako oficjalny sklep AmperWood</p>
+         
+        </div>
+        
+    </section>
+
+
+
+    <section class="Skills">
+        <div class="skills-quote"><p>Narzędzia</br> których używam</p></div>
+        <div class="skills-icon">
+            <div class="icon"><p>Python 3</p><img src="image/python.svg" alt=""></div>
+            <div class="icon"><p>Django</p><img src="image/django.svg" alt=""></div>
+            <div class="icon"><p>HTML 5</p><img src="image/html.svg" alt=""></div>
+            <div class="icon"><p>CSS 5</p><img src="image/css.svg" alt=""></div>
+            <div class="icon"><p>JavaScript</p><img src="image/JavaScript_logo.svg" alt=""></div>
+            <div class="icon"><p>GitHub</p><img src="image/github-logo.svg" alt=""></div>
+            <div class="icon"><p>Bash</p><img src="image/bash.svg" alt=""></div>
+            <div class="icon"><p>LaTeX</p><img src="image/LaTeX.svg" alt=""></div>
+            <div class="icon"><p>LabView</p><img src="image/labview-seeklogo.com.svg" alt=""></div>
+            <div class="icon"><p>Mathematica</p><img src="image/Mathematica.svg" alt=""></div>
+            <div class="icon"><p>Sztućce</p><img src="image/sztucce.png" alt=""></div>
+            <div class="icon"><p>Młotek</p><img src="image/mlotek.png" alt=""></div>
+            
+            </div>
+    </section>
+
+
+    <section class="Right-brain">
+        <div class="brain">
+            <div class="arrow1"><i class="fa fa-arrow-down" color="white"></i></div>
+            <div class="arrow1"><i class="fa fa-arrow-down" color="white"></i></div>
+            <div class="arrow1"><i class="fa fa-arrow-down" color="white"></i></div>
+            <div class="arrow1"><i class="fa fa-arrow-down" color="white"></i></div>
+            <div class="arrow1"><i class="fa fa-arrow-down" color="white"></i></div>
+            <div class="arrow1"><i class="fa fa-arrow-down" color="white"></i></div>
+            <div class="arrow1"><i class="fa fa-arrow-down" color="white"></i></div>   
+            <div class="arrow1"><i class="fa fa-arrow-down" color="white"></i></div>
+            <div class="arrow1"><i class="fa fa-arrow-down" color="white"></i></div>
+
+
+    <div class="arrow1"><i class="fa fa-arrow-down" color="white"></i></div>
+    <div class="arrow1"><i class="fa fa-arrow-down" color="white"></i></div>
+    <div class="arrow1"><i class="fa fa-arrow-down" color="white"></i></div>
+    <div class="arrow1"><i class="fa fa-arrow-down" color="white"></i></div>
+    <div class="arrow1"><i class="fa fa-arrow-down" color="white"></i></div>
+    <div class="arrow1"><i class="fa fa-arrow-down" color="white"></i></div>
+    <div class="arrow1"><i class="fa fa-arrow-down" color="white"></i></div>   
+    <div class="arrow1"><i class="fa fa-arrow-down" color="white"></i></div>
+    <div class="arrow1"><i class="fa fa-arrow-down" color="white"></i></div>
+
+    <div class="arrow1"><i class="fa fa-arrow-down" color="white"></i></div>
+    <div class="arrow1"><i class="fa fa-arrow-down" color="white"></i></div>
+    <div class="arrow1"><i class="fa fa-arrow-down" color="white"></i></div>
+    <div class="arrow1"><i class="fa fa-arrow-down" color="white"></i></div>
+    <div class="arrow1"><i class="fa fa-arrow-down" color="white"></i></div>
+    <div class="arrow1"><i class="fa fa-arrow-down" color="white"></i></div>
+    <div class="arrow1"><i class="fa fa-arrow-down" color="white"></i></div>   
+    <div class="arrow1"><i class="fa fa-arrow-down" color="white"></i></div>
+    <div class="arrow1"><i class="fa fa-arrow-down" color="white"></i></div>
+
+    <div class="arrow1"><i class="fa fa-arrow-down" color="white"></i></div>
+    <div class="arrow1"><i class="fa fa-arrow-down" color="white"></i></div>
+    <div class="arrow1"><i class="fa fa-arrow-down" color="white"></i></div>
+    <div class="arrow1"><i class="fa fa-arrow-down" color="white"></i></div>
+    <div class="arrow1"><i class="fa fa-arrow-down" color="white"></i></div>
+    <div class="arrow1"><i class="fa fa-arrow-down" color="white"></i></div>
+    <div class="arrow1"><i class="fa fa-arrow-down" color="white"></i></div>   
+    <div class="arrow1"><i class="fa fa-arrow-down" color="white"></i></div>
+    <div class="arrow1"><i class="fa fa-arrow-down" color="white"></i></div>
+
+    <div class="arrow1"><i class="fa fa-arrow-down" color="white"></i></div>
+    <div class="arrow1"><i class="fa fa-arrow-down" color="white"></i></div>
+    <div class="arrow1"><i class="fa fa-arrow-down" color="white"></i></div>
+    <div class="arrow1"><i class="fa fa-arrow-down" color="white"></i></div>
+    <div class="arrow1"><i class="fa fa-arrow-down" color="white"></i></div>
+    <div class="arrow1"><i class="fa fa-arrow-down" color="white"></i></div>
+    <div class="arrow1"><i class="fa fa-arrow-down" color="white"></i></div>   
+    <div class="arrow1"><i class="fa fa-arrow-down" color="white"></i></div>
+    <div class="arrow1"><i class="fa fa-arrow-down" color="white"></i></div>
+
+    <div class="arrow1"><i class="fa fa-arrow-down" color="white"></i></div>
+    <div class="arrow1"><i class="fa fa-arrow-down" color="white"></i></div>
+    <div class="arrow1"><i class="fa fa-arrow-down" color="white"></i></div>
+    <div class="arrow1"><i class="fa fa-arrow-down" color="white"></i></div>
+    <div class="arrow1"><i class="fa fa-arrow-down" color="white"></i></div>
+    <div class="arrow1"><i class="fa fa-arrow-down" color="white"></i></div>
+    <div class="arrow1"><i class="fa fa-arrow-down" color="white"></i></div>   
+    <div class="arrow1"><i class="fa fa-arrow-down" color="white"></i></div>
+    <div class="arrow1"><i class="fa fa-arrow-down" color="white"></i></div>
+
+    <div class="arrow1"><i class="fa fa-arrow-down" color="white"></i></div>
+    <div class="arrow1"><i class="fa fa-arrow-down" color="white"></i></div>
+    <div class="arrow1"><i class="fa fa-arrow-down" color="white"></i></div>
+    <div class="arrow1"><i class="fa fa-arrow-down" color="white"></i></div>
+    <div class="arrow1"><i class="fa fa-arrow-down" color="white"></i></div>
+    <div class="arrow1"><i class="fa fa-arrow-down" color="white"></i></div>
+    <div class="arrow1"><i class="fa fa-arrow-down" color="white"></i></div>   
+    <div class="arrow1"><i class="fa fa-arrow-down" color="white"></i></div>
+    <div class="arrow1"><i class="fa fa-arrow-down" color="white"></i></div>
+
+    <div class="arrow1"><i class="fa fa-arrow-down" color="white"></i></div>
+    <div class="arrow1"><i class="fa fa-arrow-down" color="white"></i></div>
+    <div class="arrow1"><i class="fa fa-arrow-down" color="white"></i></div>
+    <div class="arrow1"><i class="fa fa-arrow-down" color="white"></i></div>
+    <div class="arrow1"><i class="fa fa-arrow-down" color="white"></i></div>
+    <div class="arrow1"><i class="fa fa-arrow-down" color="white"></i></div>
+    <div class="arrow2"><i class="fa fa-arrow-up" color="red"></i></div>   
+    <div class="arrow1"><i class="fa fa-arrow-down" color="white"></i></div>
+    <div class="arrow1"><i class="fa fa-arrow-down" color="white"></i></div>
+
+    <div class="arrow1"><i class="fa fa-arrow-down" color="white"></i></div>
+    <div class="arrow1"><i class="fa fa-arrow-down" color="white"></i></div>
+    <div class="arrow1"><i class="fa fa-arrow-down" color="white"></i></div>
+    <div class="arrow1"><i class="fa fa-arrow-down" color="white"></i></div>
+    <div class="arrow1"><i class="fa fa-arrow-down" color="white"></i></div>
+    <div class="arrow1"><i class="fa fa-arrow-down" color="white"></i></div>
+    <div class="arrow1"><i class="fa fa-arrow-down" color="white"></i></div>   
+    <div class="arrow1"><i class="fa fa-arrow-down" color="white"></i></div>
+    <div class="arrow1"><i class="fa fa-arrow-down" color="white"></i></div>
+
+
+</div>
+    </section>
+    <div class="creativity"><p>Bądź wyjątkowy</p></div>
+
+    
+    <section class="Fluid-bgc">
+        <!-- <svg viewBox="0 0 300 300">
+            <path id="curve" d="M6,150C49.63,93,105.79,36.65,156.2,47.55,207.89,58.74,213,131.91,264,150c40.67,14.43,108.57-6.91,229-145" />
+            <text x="105">
+              <textPath xlink:href="#curve">
+                Dangerous Curves Ahead
+              </textPath>
+            </text>
+          </svg> -->
+          <div class="custom-shape-divider-bottom-1614783208">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path fill="none" id="curve" d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+    
+            </svg>
+          </div>
+
+          <div class="LBrain">
+            <div><p>Ukończony 1. stopień szkoły muzycznej. Instrument główny- fortepian</p></div>
+            <div><p>Kategoria C w tańcu towrzyskim</p></div>
+            <div><p>Wiedza stolarska z zakresu obróbki i właściwości drewna</p></div>
+            <div><p>Znajomość rysunku technicznego wykorzystywanego w architekturze</p></div>
+            <div><p>Wykonywanie zdobień Lichtenberga na drewnie pomocy napięcia ponad 10kV</p></div>
+        
+        
+        
+        </div>
+    </section>
+    
+
+<!-- 
+    <section class="Education">
+        <div class="edu-icons"><i class="fab fa-linkedin-in"></i></div>
+    </section>
+    
+    <section class="links">
+        <div class="icon"><p>GitHub</p><img src="image/github-logo.svg" alt=""></div>
+        <div class="icon"><i class="fab fa-staylinked"></i></div>
+    </section>
+     -->
+    
+    
+
+
+    <!-- <section class="CV">
+        <div class="download-cv">
+            <a href="cv.pdf" download>
+                <div class="btn">
+                    <button>CV</button>
+              </a>
+        </div>
+    </section> -->
+
+
+    <!-- <footer class="contact">
+        <form action="" method="post">
+            Imie: <input type="text" name="Imie"> </br>
+            Email: <input type="email" name="E-mail"> </br>
+            <input type="text">
+            <button>submit</button>
+        </form>
+    </footer> -->
+
+    <footer class="contact">
+        <div>
+            <p><a href="https://www.linkedin.com/in/marcin-krzywdzinski/">Linkedin</a></p>
+        </div>
+        <div>
+            <p><a href="https://github.com/MarKrzywdzinski">GitHub</a></p>
+        </div>
+        <div>
+            <p><a href="https://amperwood.com/">amperwood</a></p>
+        </div>
+
+    </footer>
+</body>
+</html>
